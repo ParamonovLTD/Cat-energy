@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cat Energy</title>
+  <title>Подбор программы</title>
 </head>
 <body>
   <header>
@@ -26,69 +26,47 @@
   </header>
 
   <main>
-    <section class="preview">
-      <div class="preview__text">
-        <h1 class="preview__title">Функциональное питание для котов</h1>
-        <p class="preview__slogan">Занялся собой? Займись котом!</p>
+    <section class="form">
+      <h1 class="form__title">Подбор программы</h1>
+      <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <div class="form__inputs">
+        <label class="form__input-label" for="">Имя:*
+          <input class="form__input" type="text" placeholder="Барсик">
+        </label>
+        <label class="form__input-label" for="">Вес (кг):*
+          <input class="form__input" type="text" placeholder="7">
+        </label>
+        <label class="form__input-label" for="">Возраст (лет):
+          <input class="form__input" type="text" placeholder="7">
+        </label>
       </div>
-      <img class="preview__image" src="img/can-mobile.png" width="280" height="270" alt="Банка корма с курицей">
-      <a class="preview__link button" href="">Подобрать программу</a>
-    </section>
-
-    <section class="programs">
-      <h2 class="programs__title">Программа питания</h2>
-      <ul class="programs__list">
-        <li class="programs__item program">
-          <h3 class="program__title">Похудение</h2>
-          <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="program__link" href="">Каталог Slim</a>
-        </li>
-        <li class="programs__item program">
-          <h3 class="program__title">Набор массы</h2>
-          <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="program__link" href="">Каталог pro</a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="features">
-      <h2 class="features__title">Как это работает</h2>
-      <ul class="features__list">
-        <li class="features__item feature">
-          <p class="feature__text">Функциональное питание содержит только полезные питательные вещества.</p>
-        </li>
-        <li class="features__item feature">
-          <p class="feature__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-        </li>
-        <li class="features__item feature">
-          <p class="feature__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-        </li>
-        <li class="features__item feature">
-          <p class="feature__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="client">
-      <h2 class="client__title">Живой пример</h2>
-      <p class="client__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-      <div class="client__results result">
-        <div class="result__item result__weight">
-          <p class="result__value">5 кг</p>
-          <p class="result__text">снижение веса</p>
-        </div>
-        <div class="result__item result__time">
-          <p class="result__value">60 дней</p>
-          <p class="result__text">затрачено времени</p>
+      <div class="form__radios">
+        <label class="form__radio-label" for="">Похудение<input class="form__radio" type="radio"></label>
+        <label class="form__radio-label" for="">Набор массы<input class="form__radio" type="radio"></label>
+        <label class="form__radio-label" for="">Не знаю (Нужен ваш совет)<input class="form__radio" type="radio"></label>
+      </div>
+      <div class="form__contacts contacts">
+        <h2 class="contacts__title">Контактные данные(владельца кота)</h2>
+        <div class="contacts__inputs">
+          <label class="contacts__label" for="">E-mail:*<input class="contacts__input" type="text" placeholder="kuklachev@gmail.com"></label>
+          <label class="contacts__label" for="">Телефон:*<input class="contacts__input" type="text" placeholder="8 (960) 900-60-90"></label>
         </div>
       </div>
-      <p class="client__price">Затраты на питание: 15 000 руб.</p>
-      <div class="client__comparison comparison">
-        <img class="client__image" src="img/cat-before.png" alt="Фото кота до правильного питания">
-        <p class="comparison__before">Было</p>
-        <input class="comparison__line" type="radio">
-        <p class="comparison__after">Стало</p>
+      <div class="form__comment comment">
+        <h2 class="comment__title">Комментарий</h2>
+        <textarea class="comment__content" name="" placeholder="Расскажите обо всех повадках кота"></textarea>
       </div>
+      <div class="form__checkboxes extra">
+        <h2 class="extra__title">Дополнительно</h2>
+        <div class="extra__checkboxes">
+          <label class="extra__label" for="">Сахарозаменитель<input class="extra__checkbox" type="checkbox"></label>
+          <label class="extra__label" for="">Питьевая вода<input class="extra__checkbox" type="checkbox"></label>
+          <label class="extra__label" for="">Молоко<input class="extra__checkbox" type="checkbox"></label>
+          <label class="extra__label" for="">Витамины<input class="extra__checkbox" type="checkbox"></label>
+        </div>
+      </div>
+      <input class="form__submit button" type="submit" value="Отправить заявку">
+      <p class="form__necessary">* — Обязательные поля</p>
     </section>
 
     <section class="location">
