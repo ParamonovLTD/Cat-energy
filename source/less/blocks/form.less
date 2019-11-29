@@ -1,0 +1,285 @@
+.form {
+  padding-top: 15px;
+  padding-bottom: 32px;
+
+  .font(16px, 18px);
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form__title {
+  margin-bottom: 25px;
+
+  text-transform: initial;
+}
+
+.form__text {
+  max-width: 226px;
+  .clear-block;
+  margin-bottom: 16px;
+
+  .font(14px, 18px);
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.form__inputs {
+  position: relative;
+
+  .clear-list;
+  padding-top: 23px;
+  padding-bottom: 24px;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+
+    width: calc(100% + 40px);
+    height: 1px;
+
+    background-color: #e7e7e7;
+  }
+}
+
+.form__input-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form__input {
+  flex-grow: 1;
+  .clear-block;
+  margin-left: 13px;
+  padding: 15px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+
+  border: 1px solid #cdcdcd;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: @greyish-brown;
+  }
+}
+
+.form__radios {
+  position: relative;
+  .clear-list;
+  padding-top: 18px;
+  padding-bottom: 20px;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+
+    width: calc(100% + 40px);
+    height: 1px;
+
+    background-color: #e7e7e7;
+  }
+}
+
+.form__radios-box {
+  display: flex;
+  align-items: center;
+  min-height: 34px;
+  margin-bottom: 8px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form__radio {
+  display: none;
+
+  &:checked ~ .form__radio-label::after {
+    display: block;
+  }
+}
+
+.form__radio-label {
+  position: relative;
+  padding-left: 46px;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: -6px;
+    left: 0;
+
+    .size(30px, 30px);
+
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 3px;
+    left: 9px;
+
+    display: none;
+    .size(12px, 12px);
+
+    background-color: @leaf;
+    border-radius: 50%;
+  }
+}
+
+.form__contacts {
+  padding-top: 29px;
+  padding-bottom: 19px;
+}
+
+.contacts__title {
+  .clear-block;
+  margin-bottom: 34px;
+
+  font-weight: 400;
+  .font(24px, 24px);
+  text-transform: initial;
+  color: #111111;
+}
+
+.contacts__inputs {
+  .clear-list;
+}
+
+.contacns__inputs-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__input {
+  .form__input;
+  margin-left: 10px;
+}
+
+.form__comment {
+  padding-top: 9px;
+  padding-bottom: 20px;
+}
+
+.comment__title {
+  .contacts__title;
+  margin-bottom: 35px;
+}
+
+.comment__content {
+  width: 280px;
+  min-height: 150px;
+  padding: 13px;
+  padding-left: 14px;
+
+  border: 1px solid #cdcdcd;
+
+  resize: none;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: @greyish-brown;
+  }
+}
+
+.form__checkboxes {
+  padding-top: 6px;
+  padding-bottom: 35px;
+}
+
+.extra__title {
+  .contacts__title;
+  margin-bottom: 33px;
+}
+
+.extra__checkboxes {
+  .clear-list;
+}
+
+.extra__checkboxes-box {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  margin-bottom: 13px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.extra__checkbox {
+  display: none;
+
+  &:checked ~ .extra__label::after {
+    display: block;
+  }
+}
+
+.extra__label {
+  position: relative;
+
+  padding-left: 46px;
+
+  .font(16px, 18px);
+  color: #222222;
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    .size(30px, 30px);
+    border: 1px solid #cdcdcd;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    top: 2px;
+    left: 5px;
+
+    display: none;
+
+    .size(22px, 17px);
+
+    background: url('../../img/icon-tick.svg') no-repeat;
+  }
+}
+
+.form__submit {
+  width: 100%;
+  margin-bottom: 21px;
+
+  border: 0;
+}
+
+.form__necessary {
+  .clear-block;
+
+  .font(14px, 16px, 'ArialMT');
+  text-align: center;
+  text-transform: initial;
+  color: @greyish-brown;
+}
