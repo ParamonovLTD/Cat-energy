@@ -1,0 +1,61 @@
+.extra__title {
+  .contacts__title;
+  margin-bottom: 33px;
+}
+
+.extra__checkboxes {
+  .clear-list;
+}
+
+.extra__checkboxes-box {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  margin-bottom: 13px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.extra__checkbox {
+  display: none;
+
+  &:checked ~ .extra__label::after {
+    display: block;
+  }
+}
+
+.extra__label {
+  position: relative;
+
+  padding-left: 46px;
+
+  .font(16px, 18px);
+  color: #222222;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -4px;
+    left: 0;
+
+    .size(30px, 30px);
+    border: 1px solid #cdcdcd;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 2px;
+    left: 5px;
+
+    display: none;
+
+    .size(22px, 17px);
+
+    background: url("../../img/icon-tick.svg") no-repeat;
+  }
+}

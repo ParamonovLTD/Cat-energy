@@ -1,0 +1,39 @@
+.burger {
+  position: relative;
+  top: -2px;
+
+  display: block;
+  .size(24px, 2px);
+
+  background-color: #222222;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -8px;
+    left: 0;
+
+    display: block;
+    .size(24px, 2px);
+
+    background-color: #222222;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 0;
+
+    display: block;
+    .size(24px, 2px);
+
+    background-color: #222222;
+  }
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}

@@ -1,0 +1,78 @@
+.result {
+  display: flex;
+  margin-bottom: 14px;
+}
+
+.result .result__item {
+  margin-right: 32px;
+  margin-bottom: 20px;
+}
+
+.result .result__item:last-of-type {
+  margin-right: 0;
+}
+
+.result__value {
+  position: relative;
+
+  .size(124px, 56px);
+  .clear-block;
+
+  .font(24px, 24px);
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+
+  background-color: #f2f2f2;
+  border: 1px solid #cdcdcd;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    z-index: 1;
+    bottom: -11px;
+    left: 17px;
+
+    .size(87px, 21px);
+
+    background-color: #f2f2f2;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    z-index: 2;
+
+    .font(12px, 12px, "Arial");
+    text-transform: lowercase;
+    color: @greyish-brown;
+  }
+}
+
+.result--weight {
+  padding: 13px 30px;
+
+  &::after {
+    content: "снижение веса";
+
+    bottom: -11px;
+    left: 33px;
+
+    .size(54px, 19px);
+  }
+}
+
+.result--time {
+  padding: 13px 15px;
+
+  &::after {
+    content: "затрачено времени";
+
+    bottom: -14px;
+    left: 32px;
+
+    .size(57px, 22px);
+  }
+}

@@ -7,6 +7,10 @@
   color: #222222;
 }
 
+.form__container {
+  .container;
+}
+
 .form__title {
   margin-bottom: 25px;
 
@@ -146,126 +150,14 @@
   padding-bottom: 19px;
 }
 
-.contacts__title {
-  .clear-block;
-  margin-bottom: 34px;
-
-  font-weight: 400;
-  .font(24px, 24px);
-  text-transform: initial;
-  color: #111111;
-}
-
-.contacts__inputs {
-  .clear-list;
-}
-
-.contacns__inputs-box {
-  display: flex;
-  align-items: center;
-  margin-bottom: 14px;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-}
-
-.contacts__input {
-  .form__input;
-  margin-left: 10px;
-}
-
 .form__comment {
   padding-top: 9px;
   padding-bottom: 20px;
 }
 
-.comment__title {
-  .contacts__title;
-  margin-bottom: 35px;
-}
-
-.comment__content {
-  width: 280px;
-  min-height: 150px;
-  padding: 13px;
-  padding-left: 14px;
-
-  border: 1px solid #cdcdcd;
-
-  resize: none;
-
-  &::placeholder {
-    text-transform: uppercase;
-    color: @greyish-brown;
-  }
-}
-
 .form__checkboxes {
   padding-top: 6px;
   padding-bottom: 35px;
-}
-
-.extra__title {
-  .contacts__title;
-  margin-bottom: 33px;
-}
-
-.extra__checkboxes {
-  .clear-list;
-}
-
-.extra__checkboxes-box {
-  display: flex;
-  align-items: center;
-  min-height: 30px;
-  margin-bottom: 13px;
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
-}
-
-.extra__checkbox {
-  display: none;
-
-  &:checked ~ .extra__label::after {
-    display: block;
-  }
-}
-
-.extra__label {
-  position: relative;
-
-  padding-left: 46px;
-
-  .font(16px, 18px);
-  color: #222222;
-
-  &::before {
-    content: "";
-
-    position: absolute;
-    top: -4px;
-    left: 0;
-
-    .size(30px, 30px);
-    border: 1px solid #cdcdcd;
-  }
-
-  &::after {
-    content: "";
-
-    position: absolute;
-    top: 2px;
-    left: 5px;
-
-    display: none;
-
-    .size(22px, 17px);
-
-    background: url("../../img/icon-tick.svg") no-repeat;
-  }
 }
 
 .form__submit {
@@ -278,7 +170,7 @@
 .form__necessary {
   .clear-block;
 
-  .font(14px, 16px, "ArialMT");
+  .font(14px, 16px, "Arial");
   text-align: center;
   text-transform: initial;
   color: @greyish-brown;
