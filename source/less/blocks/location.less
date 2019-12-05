@@ -1,0 +1,41 @@
+.location {
+  padding-top: 29px;
+}
+
+.location__container {
+  .container;
+}
+
+.location__text {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+.location__title {
+  width: 130px;
+  margin-right: 13px;
+
+  .font(16px, 20px);
+  text-transform: uppercase;
+}
+
+.location__address {
+  width: 142px;
+  .clear-block;
+
+  font-style: normal;
+  .font(14px, 20px, "Arial");
+  color: @greyish-brown;
+}
+
+.location__map {
+  .size(320px, 362px);
+}
+
+.location--grey {
+  background-color: #f2f2f2;
+}

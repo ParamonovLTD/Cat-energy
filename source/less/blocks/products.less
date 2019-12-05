@@ -1,0 +1,47 @@
+.products {
+  padding-top: 15px;
+}
+
+.products__container {
+  .container;
+}
+
+.products__title {
+  margin-bottom: 29px;
+}
+
+.products__list {
+  .clear-list;
+}
+
+.products__item {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -20px;
+
+    width: calc(100% + 40px);
+    height: 1px;
+
+    background-color: #ededed;
+  }
+}
+
+.products .products__item:last-of-type {
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+
+    width: calc(100% + 40px);
+    height: 1px;
+
+    background-color: #ededed;
+  }
+}

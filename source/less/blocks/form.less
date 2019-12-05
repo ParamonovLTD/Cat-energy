@@ -1,0 +1,177 @@
+.form {
+  padding-top: 15px;
+  padding-bottom: 32px;
+
+  .font(16px, 18px);
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form__container {
+  .container;
+}
+
+.form__title {
+  margin-bottom: 25px;
+
+  text-transform: initial;
+}
+
+.form__text {
+  max-width: 226px;
+  .clear-block;
+  margin-bottom: 16px;
+
+  .font(14px, 18px);
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.form__inputs {
+  position: relative;
+
+  .clear-list;
+  padding-top: 23px;
+  padding-bottom: 24px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+
+    width: calc(100% + 40px);
+    height: 1px;
+
+    background-color: #e7e7e7;
+  }
+}
+
+.form__input-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form__input {
+  flex-grow: 1;
+  .clear-block;
+  margin-left: 13px;
+  padding: 15px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+
+  border: 1px solid #cdcdcd;
+
+  &::placeholder {
+    text-transform: uppercase;
+    color: @greyish-brown;
+  }
+}
+
+.form__radios {
+  position: relative;
+  .clear-list;
+  padding-top: 18px;
+  padding-bottom: 20px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+
+    width: calc(100% + 40px);
+    height: 1px;
+
+    background-color: #e7e7e7;
+  }
+}
+
+.form__radios-box {
+  display: flex;
+  align-items: center;
+  min-height: 34px;
+  margin-bottom: 8px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.form__radio {
+  display: none;
+
+  &:checked ~ .form__radio-label::after {
+    display: block;
+  }
+}
+
+.form__radio-label {
+  position: relative;
+  padding-left: 46px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -6px;
+    left: 0;
+
+    .size(30px, 30px);
+
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 3px;
+    left: 9px;
+
+    display: none;
+    .size(12px, 12px);
+
+    background-color: @leaf;
+    border-radius: 50%;
+  }
+}
+
+.form__contacts {
+  padding-top: 29px;
+  padding-bottom: 19px;
+}
+
+.form__comment {
+  padding-top: 9px;
+  padding-bottom: 20px;
+}
+
+.form__checkboxes {
+  padding-top: 6px;
+  padding-bottom: 35px;
+}
+
+.form__submit {
+  width: 100%;
+  margin-bottom: 21px;
+
+  border: 0;
+}
+
+.form__necessary {
+  .clear-block;
+
+  .font(14px, 16px, "Arial");
+  text-align: center;
+  text-transform: initial;
+  color: @greyish-brown;
+}

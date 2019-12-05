@@ -5,109 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cat Energy</title>
+  <link href="img/favicon.png" rel="icon">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <div class="header__logo logo">
-      <a class="logo__link" href="index.html">
-        <img class="logo__image logo__image--header" src="img/header-logo.svg" width="191" height="39" alt="Логотип компании">
-      </a>
+    <div class="header__container">
+      <div class="header__wrapper">
+        <div class="header__logo logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__image logo__image--header" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип компании">
+          </a>
+        </div>
+        <div class="header__burger burger">
+          <!-- <span class="burger__line"></span> -->
+        </div>
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link nav__link--active" href="#">Главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Каталог продукции</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Подбор программы</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="header__burger burger">
-      <span class="burger__line"></span>
-    </div>
-    <nav class="header__nav nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Каталог продукции</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">Подбор программы</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
     <section class="preview">
-      <div class="preview__text">
-        <h1 class="preview__title">Функциональное питание для котов</h1>
-        <p class="preview__slogan">Занялся собой? Займись котом!</p>
+      <div class="preview__container">
+        <div class="preview__text">
+          <h1 class="preview__title">Функциональное питание для котов</h1>
+          <p class="preview__slogan">Занялся собой? Займись котом!</p>
+        </div>
+        <img class="preview__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Банка корма с курицей">
+        <a class="preview__link button" href="form.html">Подобрать программу</a>
       </div>
-      <img class="preview__image" src="img/can-mobile.png" width="280" height="270" alt="Банка корма с курицей">
-      <a class="preview__link button" href="#">Подобрать программу</a>
     </section>
 
     <section class="programs">
-      <h2 class="programs__title">Программа питания</h2>
-      <ul class="programs__list">
-        <li class="programs__item program">
-          <h3 class="program__title">Похудение</h2>
-          <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="program__link" href="#">Каталог Slim</a>
-        </li>
-        <li class="programs__item program">
-          <h3 class="program__title">Набор массы</h2>
-          <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="program__link" href="#">Каталог pro</a>
-        </li>
-      </ul>
+      <div class="programs__container">
+        <h2 class="programs__title visually-hidden">Программа питания</h2>
+        <ul class="programs__list">
+          <li class="programs__item program">
+            <h3 class="program__title">Похудение</h2>
+            <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="program__link" href="catalog.html">Каталог Slim</a>
+          </li>
+          <li class="programs__item program">
+            <h3 class="program__title">Набор массы</h2>
+            <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="program__link" href="catalog.html">Каталог pro</a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="features">
-      <h2 class="features__title">Как это работает</h2>
-      <ul class="features__list">
-        <li class="features__item">
-          <p class="feature__text">Функциональное питание содержит только полезные питательные вещества.</p>
-        </li>
-        <li class="features__item">
-          <p class="feature__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-        </li>
-        <li class="features__item">
-          <p class="feature__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-        </li>
-        <li class="features__item">
-          <p class="feature__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-        </li>
-      </ul>
+      <div class="features__container">
+        <h2 class="features__title section-title">Как это работает</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <p class="features__text">Функциональное питание содержит только полезные питательные вещества.</p>
+          </li>
+          <li class="features__item">
+            <p class="features__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          </li>
+          <li class="features__item">
+            <p class="features__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          </li>
+          <li class="features__item">
+            <p class="features__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="client">
-      <h2 class="client__title">Живой пример</h2>
-      <p class="client__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-      <div class="client__results result">
-        <div class="result__item result__weight">
-          <p class="result__value">5 кг</p>
-          <p class="result__text">снижение веса</p>
+      <div class="client__container">
+        <h2 class="client__title section-title">Живой пример</h2>
+        <p class="client__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+        <div class="client__results result">
+          <div class="result__item">
+            <p class="result__value result--weight">5 кг</p>
+            <!-- <p class="result__text">снижение веса</p> -->
+          </div>
+          <div class="result__item">
+            <p class="result__value result--time">60 дней</p>
+            <!-- <p class="result__text">затрачено времени</p> -->
+          </div>
         </div>
-        <div class="result__item result__time">
-          <p class="result__value">60 дней</p>
-          <p class="result__text">затрачено времени</p>
-        </div>
+        <p class="client__price">Затраты на питание: 15 000 руб.</p>
       </div>
-      <p class="client__price">Затраты на питание: 15 000 руб.</p>
       <div class="client__comparison comparison">
-        <img class="client__image" src="img/cat-before.png" alt="Фото кота до правильного питания">
-        <p class="comparison__before">Было</p>
-        <input class="comparison__line" type="radio">
-        <p class="comparison__after">Стало</p>
+        <img class="client__image" src="img/before-mobile@1x.png" width="320" height="240" alt="Фото кота до правильного питания">
+        <div class="comparison__slider">
+          <p class="comparison__text comparison--before">Было</p>
+          <input class="comparison__line" type="radio">
+          <p class="comparison__text comparison--after">Стало</p>
+        </div>
       </div>
     </section>
 
     <section class="location">
-      <div class="location__text">
-        <h2 class="location__title">приглашаем к сотрудничеству дилеров!</h2>
-        <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="location__container">
+        <div class="location__text">
+          <h2 class="location__title section-title">приглашаем <br> к сотрудничеству дилеров!</h2>
+          <address class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
       </div>
-      <img class="location__map" src="img/map.jpg" width="320" height="400" alt="Адрес офиса">
+      <img class="location__map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Адрес офиса">
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer__logo logo">
-      <a class="logo__link" href="#">
-        <img class="logo__image logo__image--footer" src="img/footer-logo.svg" alt="Логотип компании">
-      </a>
-    </div>
-    <div class="footer__socials social">
-      <ul class="social__list">
+    <div class="footer__container">
+      <div class="footer__logo logo">
+        <a class="logo__link" href="#">
+          <img class="logo__image logo__image--footer" src="img/logo-footer.svg" width="128" height="24" alt="Логотип компании">
+        </a>
+      </div>
+      <ul class="footer__socials social">
         <li class="social__item">
           <a class="social__link" href="#">
             <svg class="social__icon social--vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12">
@@ -117,11 +135,7 @@
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <svg class="social__icon social--insta" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 16 16">
-              <!--Убрать-->
-              <style>
-                  .st0{fill:#231f20}
-              </style>
+            <svg class="social__icon social--inst" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 16 16">
               <path class="st0" d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2C2.4 15 1 13.6 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2C1.9 0 0 1.9 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z"/>
               <path class="st0" d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1 0 1.7-1.4 3.1-3.1 3.1-1.7 0-3.1-1.4-3.1-3.1 0-1.7 1.4-3.1 3.1-3.1m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z"/>
               <circle class="st0" cx="12.3" cy="3.7" r=".9"/>
@@ -136,14 +150,14 @@
           </a>
         </li>
       </ul>
-    </div>
-    <div class="footer__copyright copyright">
-      <p class="copyright__text">HTML Academy</p>
-      <a class="copyright__link" href="#">
-        <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-          <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
-        </svg>
-      </a>
+      <div class="footer__copyright copyright">
+        <p class="copyright__text">HTML Academy</p>
+        <a class="copyright__link" href="#">
+          <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+            <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 </body>
