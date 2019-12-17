@@ -6,6 +6,10 @@
     display: flex;
     flex-grow: 0;
   }
+
+  @media @desktop-width {
+
+  }
 }
 
 .nav__list {
@@ -49,6 +53,10 @@
       margin-right: 0;
     }
   }
+
+  @media @desktop-width {
+    margin-right: 34px;
+  }
 }
 
 .nav__link {
@@ -68,12 +76,28 @@
       content: "";
 
       position: absolute;
-      bottom: -7px;
+      bottom: -9px;
       left: 0;
 
       .size(100%, 2px);
 
       background-color: @leaf;
+    }
+  }
+
+  @media @desktop-width {
+    .font(20px, 25px);
+
+    &::after {
+      bottom: -7px;
+    }
+
+    &--white {
+      color: #ffffff;
+    }
+
+    &--white::after {
+      background-color: #ffffff;
     }
   }
 }

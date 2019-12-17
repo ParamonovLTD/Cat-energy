@@ -1,3 +1,22 @@
+.copyright {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 41px;
+
+  @media @tablet-width {
+    width: auto;
+    padding-top: 11px;
+    padding-right: 50px;
+  }
+
+  @media @tablet-width {
+    padding-top: 13px;
+  }
+}
+
 .copyright__text {
   .clear-block;
 
@@ -11,4 +30,8 @@
   right: -7px;
 
   .size(41px, 41px);
+
+  @media @tablet-width {
+    top: 2px;
+  }
 }

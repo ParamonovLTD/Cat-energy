@@ -1,17 +1,31 @@
+.comment {
+  padding-top: 9px;
+  padding-bottom: 20px;
+
+  @media @tablet-width {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  @media @desktop-width {
+    padding-top: 33px;
+  }
+}
+
 .comment__title {
-  .clear-block;
+  .form__subtitle();
   margin-bottom: 35px;
 
-  font-weight: 400;
-  .font(24px, 24px);
-  text-transform: initial;
-  color: #111111;
+  @media @tablet-width {
+    margin-bottom: 76px;
+  }
 }
 
 .comment__content {
-  width: 280px;
+  width: 100%;
   min-height: 150px;
   padding: 13px;
+  padding-right: 14px;
   padding-left: 14px;
 
   border: 1px solid #cdcdcd;
@@ -21,5 +35,11 @@
   &::placeholder {
     text-transform: uppercase;
     color: @greyish-brown;
+  }
+
+  @media @tablet-width {
+    min-height: 174px;
+    padding-right: 19px;
+    padding-left: 19px;
   }
 }

@@ -54,18 +54,9 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.mobile-container {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
-.container {
-  margin: 0 auto;
-}
-
 .button {
   display: block;
-  padding-top: 9px;
+  padding-top: 10px;
   padding-bottom: 10px;
 
   .font(16px, 20px);
@@ -82,4 +73,8 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   .font(36px, 60px);
   color: #111111;
+
+  @media @tablet-width {
+    .font(60px, 60px);
+  }
 }
