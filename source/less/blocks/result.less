@@ -1,6 +1,26 @@
 .result {
   display: flex;
-  margin-bottom: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  // margin-bottom: 14px;
+
+  @media @tablet-width {
+    justify-content: space-between;
+    padding-bottom: 235px;
+  }
+
+  @media @desktop-width {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+}
+
+.result__box {
+  display: flex;
+
+  @media @desktop-width {
+    margin-bottom: 28px;
+  }
 }
 
 .result__item {
@@ -9,6 +29,10 @@
 
   &:last-of-type {
     margin-right: 0;
+  }
+
+  @media @tablet-width {
+    margin-right: 42px;
   }
 }
 
@@ -64,7 +88,7 @@
   }
 
   &--time {
-    padding: 13px 15px;
+    padding: 14px 15px;
 
     &::after {
       content: "затрачено времени";
@@ -74,5 +98,96 @@
 
       .size(57px, 22px);
     }
+  }
+
+  @media @tablet-width {
+    .size(162px, 72px);
+
+    .font(30px, 37px);
+
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+
+    &::before {
+      background-color: #ffffff;
+    }
+
+    &::after {
+      .font(14px, 14px, "Arial");
+    }
+
+    &--weight {
+      padding: 14px 30px;
+
+      &::before {
+        bottom: -13px;
+        left: 23px;
+
+        .size(114px, 27px);
+      }
+
+      &::after {
+        bottom: 0;
+        left: 31px;
+
+        .size(97px, 8px);
+      }
+    }
+
+    &--time {
+      padding: 14px 15px;
+
+      &::before {
+        bottom: -13px;
+        left: 9px;
+
+        .size(142px, 27px);
+      }
+
+      &::after {
+        bottom: -3px;
+        left: 15px;
+
+        .size(130px, 11px);
+      }
+    }
+  }
+
+  @media @desktop-width {
+    background-color: #ebebeb;
+
+    &::before {
+      background-color: #ebebeb;
+    }
+  }
+}
+
+.result__price {
+  .clear-block;
+  margin-top: 14px;
+
+  .font(14px, 20px);
+  text-transform: uppercase;
+  color: #111111;
+
+  @media @tablet-width {
+    max-width: 180px;
+    margin-top: 8px;
+
+    .font(20px, 29px);
+    text-align: right;
+  }
+
+  @media @desktop-width {
+    max-width: 350px;
+
+    text-align: left;
+  }
+}
+
+.result__price-text {
+  @media @desktop-width {
+    margin-right: 59px;
   }
 }

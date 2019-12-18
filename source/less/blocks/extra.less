@@ -1,24 +1,68 @@
-.extra__title {
-  .clear-block;
-  margin-bottom: 33px;
+.extra {
+  padding-top: 6px;
+  padding-bottom: 29px;
 
-  font-weight: 400;
-  .font(24px, 24px);
-  text-transform: initial;
-  color: #111111;
+  @media @tablet-width {
+    padding-top: 34px;
+    padding-bottom: 45px;
+  }
+
+  @media @desktop-width {
+    padding-top: 6px;
+    padding-bottom: 22px;
+  }
+}
+
+.extra__title {
+  .form__subtitle();
+  margin-bottom: 41px;
+
+  @media @tablet-width {
+    margin-bottom: 66px;
+  }
+
+  @media @tablet-width {
+    margin-bottom: 36px;
+    padding-top: 30px;
+  }
 }
 
 .extra__checkboxes {
   .clear-list;
+
+  @media @tablet-width {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 1px;
+  }
+
+  @media @desktop-width {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .extra__checkboxes-box {
-  display: flex;
-  align-items: center;
   min-height: 30px;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @media @tablet-width {
+    width: 45.5%;
+    min-height: 40px;
+    margin-bottom: 32px;
+
+    &:nth-last-of-type(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media @desktop-width {
+    width: 20%;
     margin-bottom: 0;
   }
 }
@@ -43,7 +87,7 @@
     content: "";
 
     position: absolute;
-    top: -4px;
+    top: -2px;
     left: 0;
 
     .size(30px, 30px);
@@ -54,7 +98,7 @@
     content: "";
 
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: 5px;
 
     display: none;
@@ -62,5 +106,22 @@
     .size(22px, 17px);
 
     background: url("../../img/icon-tick.svg") no-repeat;
+  }
+
+  @media @tablet-width {
+    padding-left: 58px;
+
+    .font(20px, 20px);
+
+    &::before {
+      top: -4px;
+
+      .size(40px, 40px);
+    }
+
+    &::after {
+      top: 8px;
+      left: 10px;
+    }
   }
 }

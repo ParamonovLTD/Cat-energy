@@ -1,0 +1,155 @@
+.advantage {
+  position: relative;
+
+  min-height: 60px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    .size(60px, 60px);
+  }
+
+  &--leaf::before {
+    background: @leaf url("../../img/advantage-leaf@1x.png") no-repeat 5px 5px;
+  }
+
+  &--powder::before {
+    background: @leaf url("../../img/advantage-powder@1x.png") no-repeat 5px 4px;
+  }
+
+  &--dining::before {
+    background: @leaf url("../../img/advantage-dining@1x.png") no-repeat 4px 5px;
+  }
+
+  &--clock::before {
+    background: @leaf url("../../img/advantage-clock@1x.png") no-repeat 5px 5px;
+  }
+
+  @media @tablet-width {
+    width: 324px;
+
+    &::before {
+      top: -2px;
+      left: 0;
+
+      .size(80px, 80px);
+    }
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+
+      .font(281px, 281px);
+      color: #f2f2f2;
+    }
+
+    &--leaf {
+      &::before {
+        background-position: 15px 15px;
+      }
+
+      &::after {
+        content: "1";
+
+        top: -42px;
+        right: 135px;
+
+        .size(71px, 228px);
+      }
+    }
+
+    &--powder {
+      &::before {
+        background-position: 15px 15px;
+      }
+
+      &::after {
+        content: "2";
+
+        top: -41px;
+        right: 99px;
+
+        .size(114px, 230px);
+      }
+    }
+
+    &--dining {
+      &::before {
+        background-position: 15px 15px;
+      }
+
+      &::after {
+        content: "3";
+
+        top: -40px;
+        right: 98px;
+
+        .size(113px, 233px);
+      }
+    }
+
+    &--clock {
+      &::before {
+        background-position: 15px 15px;
+      }
+
+      &::after {
+        content: "4";
+
+        top: -41px;
+        right: 90px;
+
+        .size(121px, 228px);
+      }
+    }
+  }
+
+  @media @desktop-width {
+    width: auto;
+
+    &--leaf {
+      &::after {
+        right: 56px;
+      }
+    }
+
+    &--powder {
+      &::after {
+        right: 19px;
+      }
+    }
+
+    &--dining {
+      &::after {
+        right: 18px;
+      }
+    }
+
+    &--clock {
+      &::after {
+        right: 10px;
+      }
+    }
+  }
+}
+
+.advantage__text {
+  .clear-block;
+
+  padding-left: 80px;
+
+  .font(14px, 18px, "Arial");
+  color: #444444;
+
+  @media @tablet-width {
+    max-width: 245px;
+    margin-top: 110px;
+    padding-left: 0;
+
+    .font(16px, 24px, "Arial");
+  }
+}

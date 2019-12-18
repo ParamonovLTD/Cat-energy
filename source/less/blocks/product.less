@@ -1,9 +1,58 @@
 .product {
-  padding-bottom: 26px;
+  padding-bottom: 25px;
+
+  @media @tablet-width {
+    margin-bottom: 140px;
+    padding-bottom: 40px;
+
+    background-color: #f2f2f2;
+
+    &:nth-last-of-type(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media @desktop-width {
+    &:nth-of-type(n + 5) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .product__content {
   display: flex;
+
+  @media @tablet-width {
+    flex-direction: column;
+  }
+}
+
+.product__image {
+  display: block;
+}
+
+.product__image--small {
+  @media @tablet-width {
+    .size(324px, 172px);
+    margin-top: -46px;
+  }
+
+  @media @desktop-width {
+    .size(245px, 172px);
+    margin-top: -46px;
+  }
+}
+
+.product__image--big {
+  @media @tablet-width {
+    .size(324px, 208px);
+    margin-top: -82px;
+  }
+
+  @media @desktop-width {
+    .size(245px, 208px);
+    margin-top: -81px;
+  }
 }
 
 .product__info {
@@ -13,14 +62,36 @@
   flex-grow: 1;
   padding-top: 21px;
   padding-bottom: 22px;
+
+  @media @tablet-width {
+    margin-bottom: 19px;
+    padding-top: 37px;
+    padding-right: 37px;
+    padding-left: 38px;
+  }
 }
 
 .product__title {
   .clear-block;
 
+  max-width: 75px;
+  font-weight: 400;
   .font(16px, 20px);
   text-transform: uppercase;
   color: #111111;
+
+  @media @tablet-width {
+    align-self: center;
+    max-width: 140px;
+    margin-bottom: 27px;
+
+    .font(20px, 20px);
+    text-align: center;
+  }
+}
+
+.product__description {
+  border-collapse: collapse;
 }
 
 .product__feature {
@@ -29,6 +100,30 @@
 
   .font(12px, 16px, "Arial");
   color: @greyish-brown;
+
+  @media @tablet-width {
+    position: relative;
+
+    margin-bottom: 16px;
+
+    .font(16px, 16px, "Arial");
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+
+      .size(100%, 1px);
+
+      background-color: #e2e2e2;
+    }
+  }
 }
 
 .product__parameter {
@@ -37,4 +132,15 @@
 
 .product__value {
   padding: 0;
+}
+
+.product__link {
+  @media @tablet-width {
+    width: 77%;
+    margin: 0 auto;
+  }
+
+  @media @desktop-width {
+    width: 69%;
+  }
 }
