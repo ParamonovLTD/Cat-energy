@@ -4,7 +4,7 @@
   min-height: 305px;
   padding-top: 27px;
 
-  background: url("../../img/index-background-mobile@1x.jpg") no-repeat;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
 
   @media @tablet-width {
     padding-top: 43px;
@@ -13,6 +13,7 @@
   }
 
   @media @desktop-width {
+    min-height: 617px;
     padding-top: 94px;
     padding-bottom: 20px;
 
@@ -26,7 +27,7 @@
 
       .size(720px, 696px);
 
-      background: url("../../img/index-background-desktop@1x.jpg") no-repeat;
+      background: url("../img/index-background-desktop@1x.jpg") no-repeat;
     }
   }
 }
@@ -36,6 +37,7 @@
 
   @media @desktop-width {
     display: flex;
+    padding-left: 120px;
   }
 }
 
@@ -50,7 +52,7 @@
   }
 
   @media @desktop-width {
-    padding-left: 80px;
+    padding-left: 0;
   }
 }
 
@@ -93,10 +95,11 @@
   }
 
   @media @desktop-width {
-    position: relative;
-    top: -80px;
-    right: 80px;
+    position: absolute;
+    top: 14px;
+    right: 22.8%;
 
+    display: block;
     .size(552px, 499px);
   }
 }
@@ -121,6 +124,8 @@
 
   @media @desktop-width {
     top: 328px;
-    left: 190px;
+    left: auto;
+
+    display: block;
   }
 }
