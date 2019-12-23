@@ -63,6 +63,26 @@
   text-transform: uppercase;
   color: #111111;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    cursor: default;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
   @media @tablet-width {
     font-weight: 400;
     .font(18px, 25px);

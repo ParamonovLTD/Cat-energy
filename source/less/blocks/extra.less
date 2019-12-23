@@ -17,13 +17,43 @@
   // .form__subtitle();
   margin-bottom: 41px;
 
-  @media @tablet-width {
-    margin-bottom: 66px;
+  &::before {
+    top: 0;
+
+    width: 203px;
+  }
+
+  &::after {
+    top: 14px;
   }
 
   @media @tablet-width {
+    margin-bottom: 66px;
+
+    &::before {
+      top: 0;
+
+      width: 292px;
+    }
+
+    &::after {
+      top: 22px;
+    }
+  }
+
+  @media @desktop-width {
     margin-bottom: 36px;
     padding-top: 30px;
+
+    &::before {
+      top: 26px;
+
+      width: 291px;
+    }
+
+    &::after {
+      top: 51px;
+    }
   }
 }
 
@@ -82,6 +112,14 @@
 
   .font(16px, 18px);
   color: #222222;
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before {
     content: "";

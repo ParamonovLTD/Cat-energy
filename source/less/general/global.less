@@ -65,6 +65,28 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 
   background-color: @leaf;
+
+  &:hover {
+    background-color: @grass;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--grey {
+    color: @greyish-brown;
+
+    background-color: #f2f2f2;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:active {
+      color: rgba(68, 68, 68, 0.3);
+    }
+  }
 }
 
 .section-title {
@@ -76,6 +98,39 @@ input[type="radio"].visually-hidden {
 
   @media @tablet-width {
     .font(60px, 60px);
+  }
+}
+
+.title--green-line {
+  position: relative;
+  padding-bottom: 34px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -39px;
+    z-index: -1;
+
+    .size(200px, 50px);
+
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    right: 0;
+    left: 0;
+    z-index: -2;
+
+    .size(1440px, 3px);
+    margin-left: -110px;
+
+    background-color: @leaf;
   }
 }
 

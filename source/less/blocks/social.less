@@ -6,8 +6,33 @@
   width: 135px;
   .clear-list;
 
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: -73px;
+
+    .size(280px, 1px);
+
+    background-color: #e6e6e6;
+  }
+
+  &::before {
+    top: -23px;
+  }
+
+  &::after {
+    bottom: -41px;
+  }
+
   @media @tablet-width {
     min-height: 30px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -15,6 +40,14 @@
   position: absolute;
 
   fill: @brownish-grey;
+
+  &:hover {
+    fill: @leaf;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--vk {
     top: 4px;

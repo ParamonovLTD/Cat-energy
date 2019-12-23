@@ -1,14 +1,46 @@
 .location {
+  position: relative;
+
   padding-top: 29px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    bottom: 34%;
+    left: 40.5%;
+    z-index: 5;
+
+    display: block;
+    .size(60px, 60px);
+
+    background: url("../img/map-pin.png") no-repeat;
+    background-size: contain;
+  }
 
   @media @tablet-width {
     padding-top: 64px;
+
+    &::before {
+      bottom: 21.5%;
+      left: 41.9%;
+
+      .size(122px, 122px);
+    }
   }
 
   @media @desktop-width {
     position: relative;
 
     padding-top: 0;
+
+    &::before {
+      right: 22.2%;
+      bottom: 31.9%;
+      left: auto;
+
+      .size(122px, 122px);
+    }
   }
 }
 
@@ -89,10 +121,11 @@
 
 .location__map {
   display: block;
-  .size(320px, 362px);
+  .size(100%, auto);
+  // margin: 0 auto;
 
   @media @tablet-width {
-    .size(768px, 400px);
+    // .size(768px, 400px);
   }
 
   @media @desktop-width {

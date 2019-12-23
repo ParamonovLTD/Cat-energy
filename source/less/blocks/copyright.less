@@ -6,6 +6,14 @@
   width: 100%;
   min-height: 41px;
 
+  &:hover .copyright__icon {
+    fill: @leaf;
+  }
+
+  &:active .copyright__link {
+    opacity: 0.3;
+  }
+
   @media @tablet-width {
     width: auto;
     padding-top: 11px;
@@ -25,11 +33,20 @@
 }
 
 .copyright__link {
+  .clear-block;
+
+  .font(16px, 16px, "Arial");
+  color: @greyish-brown;
+}
+
+.copyright__icon {
   position: absolute;
   top: -11px;
   right: -7px;
 
   .size(41px, 41px);
+
+  fill: #666666;
 
   @media @tablet-width {
     top: 2px;
