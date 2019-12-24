@@ -43,9 +43,9 @@
           <p class="preview__slogan">Занялся собой? Займись котом!</p>
         </div>
         <picture>
-          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-          <img class="preview__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Банка корма с курицей">
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+          <img class="preview__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="271" alt="Банка корма с курицей">
         </picture>
         <a class="preview__link button" href="form.html">Подобрать программу</a>
       </div>
@@ -108,16 +108,20 @@
         </div>
         <div class="client__comparison comparison">
           <div class="comparision-box">
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-              <img class="comparison__image comparison__image--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Фото кота до правильного питания">
-            </picture>
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
-              <img class="comparison__image comparison__image--after" src="img/after-mobile@1x.png" width="320" height="240" alt="Фото кота до правильного питания">
-            </picture>
+            <!-- <div class="comparison__image-wrapper"> -->
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="comparison__image comparison__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Фото кота до правильного питания">
+              </picture>
+            <!-- </div> -->
+            <!-- <div class="comparison__image-wrapper"> -->
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="comparison__image comparison__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Фото кота до правильного питания">
+              </picture>
+            <!-- </div> -->
           </div>
           <div class="comparison__slider">
             <p class="comparison__text comparison__text--before">Было</p>
@@ -156,9 +160,9 @@
         </div>
       </div>
       <picture>
-        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
-        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-        <img class="location__map" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Адрес офиса">
+        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@1x.png 2x">
+        <img class="location__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" width="320" height="362" alt="Адрес офиса">
       </picture>
     </section>
   </main>
