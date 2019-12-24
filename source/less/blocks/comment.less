@@ -16,8 +16,34 @@
   // .form__subtitle();
   margin-bottom: 35px;
 
+  &::before {
+    width: 181px;
+  }
+
+  &::after {
+    top: 14px;
+  }
+
   @media @tablet-width {
     margin-bottom: 76px;
+
+    &::before {
+      width: 259px;
+    }
+
+    &::after {
+      top: 22px;
+    }
+  }
+
+  @media @desktop-width {
+    &::before {
+      width: 258px;
+    }
+
+    &::after {
+      top: 21px;
+    }
   }
 }
 
@@ -25,7 +51,6 @@
   width: 100%;
   min-height: 150px;
   padding: 13px;
-  padding-right: 14px;
   padding-left: 14px;
 
   border: 1px solid #cdcdcd;

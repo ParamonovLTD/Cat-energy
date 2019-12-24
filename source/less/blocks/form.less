@@ -6,6 +6,8 @@
   text-transform: uppercase;
   color: #222222;
 
+  overflow: hidden;
+
   @media @tablet-width {
     padding-top: 42px;
     padding-bottom: 72px;
@@ -138,6 +140,16 @@
 
   border: 1px solid #ebebeb;
 
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: #444444;
+
+    outline: none;
+  }
+
   &::placeholder {
     text-transform: uppercase;
     color: @greyish-brown;
@@ -212,11 +224,27 @@
   &:checked ~ .form__radio-label::after {
     display: block;
   }
+
+  &:checked:hover ~ .form__radio-label::before {
+    border-color: #cdcdcd;
+  }
+
+  &:checked:active ~ .form__radio-label {
+    opacity: 1;
+  }
 }
 
 .form__radio-label {
   position: relative;
   padding-left: 46px;
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::before {
     content: "";

@@ -12,18 +12,38 @@
   }
 
   @media @desktop-width {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 70px;
-    padding-left: 70px;
+    position: relative;
 
-    background-color: #ebebeb;
+    padding-bottom: 70px;
+    // padding-left: 70px;
+
+    background-color: #f2f2f2;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      // z-index: 0;
+
+      .size(calc(27.5%), 462px);
+
+      background-color: #ebebeb;
+    }
   }
 }
 
 .client__container {
   .container;
 
+  @media @desktop-width {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.client__content {
   @media @desktop-width {
     margin: 0;
     padding-right: 87px;
