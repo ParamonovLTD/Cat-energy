@@ -3,20 +3,20 @@
 
   padding-top: 29px;
 
-  &::before {
-    content: "";
+  // &::before {
+  //   content: "";
 
-    position: absolute;
-    bottom: 34%;
-    left: 40.5%;
-    z-index: 5;
+  //   position: absolute;
+  //   bottom: 34%;
+  //   left: 40.5%;
+  //   z-index: 5;
 
-    display: block;
-    .size(60px, 60px);
+  //   display: block;
+  //   .size(60px, 60px);
 
-    background: url("../img/map-pin.png") no-repeat;
-    background-size: contain;
-  }
+  //   background: url("../img/map-pin.png") no-repeat;
+  //   background-size: contain;
+  // }
 
   @media @tablet-width {
     padding-top: 64px;
@@ -48,6 +48,18 @@
   .container;
 }
 
+.location-wrapper {
+  @media @desktop-width {
+    position: absolute;
+    left: 50%;
+
+    .size(100%, 400px);
+    max-width: 1300px;
+
+    transform: translate(-50%);
+  }
+}
+
 .location__text {
   display: flex;
   justify-content: space-between;
@@ -62,7 +74,7 @@
   @media @desktop-width {
     position: absolute;
     top: 94px;
-    left: 110px;
+    left: 40px;
 
     padding-top: 63px;
     padding-right: 80px;
@@ -121,15 +133,15 @@
 
 .location__map {
   display: block;
-  .size(100%, auto);
+  .size(100%, 400px);
   // margin: 0 auto;
 
   @media @tablet-width {
-    // .size(768px, 400px);
+    // .size(100%, 400px);
   }
 
   @media @desktop-width {
-    .size(100%, auto);
+    // .size(100%, 400px);
   }
 }
 
