@@ -209,10 +209,10 @@
 }
 
 .comparison__line-circle {
-  @media @desktop-width {
+  @media @tablet-width {
     position: absolute;
-    top: -14px;
-    left: 46.2%;
+    top: -15px;
+    left: 46.1%;
 
     .size(34px, 34px);
 
@@ -221,6 +221,20 @@
     border-radius: 50%;
 
     cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: solid 2px @leaf;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+
+      &::after {
+        top: 11px;
+        left: 11px;
+      }
+    }
 
     &::after {
       content: "";
@@ -235,6 +249,11 @@
       border-radius: 50%;
     }
   }
+
+  @media @desktop-width {
+    top: -14px;
+    left: 46.2%;
+  }
 }
 
 .comparison__text {
@@ -248,18 +267,10 @@
 
   &--before {
     margin-right: 21px;
-
-    @media @tablet-width {
-      margin-right: 24px;
-    }
   }
 
   &--after {
     margin-left: 16px;
-
-    @media @tablet-width {
-      margin-left: 20px;
-    }
   }
 
   @media @tablet-width {
@@ -270,6 +281,14 @@
     .font(20px, 20px);
 
     border-bottom: 1px dotted #bfbfbf;
+
+    &:hover {
+      border-bottom: 1px solid #999999;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
 
     &--before {
       margin-right: 24px;
