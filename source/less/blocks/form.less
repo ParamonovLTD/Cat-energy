@@ -145,7 +145,7 @@
   }
 
   &:focus {
-    border-color: #444444;
+    border: 2px solid #444444;
 
     outline: none;
   }
@@ -153,6 +153,10 @@
   &::placeholder {
     text-transform: uppercase;
     color: @greyish-brown;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
   }
 
   @media @tablet-width {

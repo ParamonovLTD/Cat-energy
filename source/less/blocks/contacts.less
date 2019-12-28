@@ -106,13 +106,21 @@
   }
 
   &:focus {
-    border-color: #444444;
+    border: 2px solid #444444;
 
     outline: none;
   }
 
   &:focus + .contacts__icon {
     fill: @leaf;
+  }
+
+  &--error {
+    border: 2px solid #ff8282;
+  }
+
+  &--error + .contacts__icon {
+    fill: #ff8282;
   }
 
   @media @tablet-width {
