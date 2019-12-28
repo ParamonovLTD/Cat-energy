@@ -13,24 +13,22 @@
 
   @media @desktop-width {
     position: relative;
-
-    padding-bottom: 70px;
     // padding-left: 70px;
 
-    background-color: #f2f2f2;
+    background: linear-gradient(to right, #f2f2f2 50%, #ebebeb 50% 100%);
 
-    &::after {
-      content: "";
+    // &::after {
+    //   content: "";
 
-      position: absolute;
-      top: 0;
-      right: 0;
-      // z-index: 0;
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   // z-index: 0;
 
-      .size(calc(27.5%), 462px);
+    //   .size(calc(150px + 30%), 462px);
 
-      background-color: #ebebeb;
-    }
+    //   background-color: #ebebeb;
+    // }
   }
 }
 
@@ -40,6 +38,9 @@
   @media @desktop-width {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 70px;
+
+    background: linear-gradient(to right, #f2f2f2 75%, #ebebeb 75% 100%);
   }
 }
 
