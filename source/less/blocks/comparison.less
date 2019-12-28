@@ -41,7 +41,7 @@
   }
 }
 
-.comparision-box {
+.comparison__box {
   position: relative;
 
   display: flex;
@@ -61,34 +61,67 @@
     left: 24px;
     min-width: 690px;
 
-    & > div {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
+    // & > div {
+    //   position: absolute;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 0;
 
-      width: 50%;
+    //   width: 50%;
 
-      overflow: hidden;
-    }
+    //   overflow: hidden;
+    // }
   }
 }
 
-.comparision__image-wrapper {
+.comparison__image-wrapper {
   @media @tablet-width {
-    width: 50%;
+    position: absolute;
+    top: -169px;
+    bottom: 0;
+    left: 0;
 
-    overflow: hidden;
+    .size(50%, 517px);
+
+    overflow-x: hidden;
+
+    &--after {
+      left: 354px;
+
+      width: 49.7%;
+    }
+  }
+
+  @media @desktop-width {
+    // position: absolute;
+    top: -203px;
+    // bottom: 0;
+    // left: 0;
+
+    .size(50%, 531px);
+
+    &--before {
+      left: 0;
+
+      width: 56%;
+    }
+
+    &--after {
+      left: 382px;
+
+      width: 47%;
+    }
   }
 }
 
 .comparison__image {
   position: absolute;
+  top: 34px;
   left: -20px;
 
   .size(320px, 240px);
   max-width: 320px;
-  margin-top: 34px;
+  // margin-top: 34px;
 
   &--after {
     display: none;
@@ -101,11 +134,17 @@
     display: block;
     .size(690px, 517px);
     max-width: none;
-    margin-top: -169px;
+    // margin-top: -169px;
+
+    &--after {
+      position: absolute;
+      right: 0;
+      left: auto;
+    }
   }
 
   @media @desktop-width {
-    top: -20px;
+    top: 14px;
   }
 }
 
@@ -127,6 +166,7 @@
 }
 
 .comparison__line {
+  // -webkit-appearance: none;
   position: relative;
 
   .size(84px, 14px);
@@ -155,7 +195,7 @@
 
   @media @tablet-width {
     .size(428px, 6px);
-    margin-top: 8px;
+    margin-top: 7px;
 
     background-color: #dcdcdc;
     border-radius: 2.5px;
