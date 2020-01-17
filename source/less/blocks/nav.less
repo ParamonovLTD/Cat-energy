@@ -1,6 +1,13 @@
 .nav {
-  display: none;
   flex-grow: 1;
+
+  &--closed {
+    display: none;
+  }
+
+  &--nojs {
+    display: block;
+  }
 
   @media @tablet-width {
     display: flex;
@@ -58,7 +65,7 @@
 .nav__link {
   position: relative;
 
-  font-weight: 700;
+  font-weight: 500;
   .font(20px, 20px);
   text-transform: uppercase;
   color: #111111;

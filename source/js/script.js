@@ -1,38 +1,14 @@
-// function imageComparison(selector) {
+var burger = document.querySelector(".burger");
+var nav = document.querySelector(".nav");
 
-//   let comparison = $(selector)
-//       // .addClass('image-comparison')
-//       // .prepend('<div class="comparison__image--before"></div>')
-//       .append('<input type="range" class="comparison__slider">');
+burger.classList.remove("burger--nojs");
+nav.classList.remove("nav--nojs");
+burger.addEventListener("click", function () {
+  nav.classList.toggle("nav--closed");
+});
 
-//   let images = comparison
-//       .find('img')
-//       .addClass('comparison__image')
-//       .css('max-width', comparison.width());
+var map = document.querySelector(".location__map");
+var mapFrame = document.querySelector(".location__map--nojs");
 
-//   let before = comparison
-//       .find('.comparison__image--before')
-//       .append(images.eq(0));
-
-//   comparison
-//       .find('.comparison__slider')
-//       .on('dragstart', () => false) // отмена станд. drug&drop
-//       .on('mousedown', function(e) {
-//           let slider = $(this);
-//           let doc = $(document).on('mousemove', (e) => {
-//               let offset = e.pageX - comparison.position().left;
-//               let width = comparison.width();
-
-//               // установим границы, чтобы ползунок не выходил
-//               if (offset < 0) offset = 0;
-//               if (offset > width) offset = width;
-
-//               slider.css('left', offset + 'px');
-//               before.css('width', offset * 1.6 + 'px');
-//           });
-
-//           doc.on('mouseup', () => doc.off('mousemove'));
-//       });
-// };
-
-// imageComparison('#comparison');
+mapFrame.classList.remove("location__map--nojs");
+map.classList.add("location__map--nojs");
