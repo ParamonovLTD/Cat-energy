@@ -48,7 +48,7 @@
   .container;
 }
 
-.location-wrapper {
+.location__wrapper {
   @media @desktop-width {
     position: absolute;
     left: 50%;
@@ -76,7 +76,7 @@
     top: 94px;
     left: 40px;
 
-    padding-top: 63px;
+    padding-top: 64px;
     padding-right: 80px;
     padding-bottom: 58px;
     padding-left: 76px;
@@ -133,11 +133,17 @@
 
 .location__map {
   display: block;
-  .size(100%, 400px);
+  .size(100%, 362px);
   // margin: 0 auto;
 
+  border: 0;
+
+  &--nojs {
+    display: none;
+  }
+
   @media @tablet-width {
-    // .size(100%, 400px);
+    .size(100%, 400px);
   }
 
   @media @desktop-width {

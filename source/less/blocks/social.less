@@ -54,27 +54,13 @@
     left: 0;
 
     .size(22px, 12px);
-
-    @media @tablet-width {
-      top: 5px;
-      left: 15px;
-
-      .size(30px, 16px);
-    }
   }
 
-  &--inst {
+  &--insta {
     top: 2px;
     left: 58px;
 
     .size(17px, 17px);
-
-    @media @tablet-width {
-      top: 2px;
-      left: 73px;
-
-      .size(23px, 23px);
-    }
   }
 
   &--fb {
@@ -82,8 +68,24 @@
     right: 10px;
 
     .size(10px, 19px);
+  }
 
-    @media @tablet-width {
+  @media @tablet-width {
+    &--vk {
+      top: 5px;
+      left: 15px;
+
+      .size(30px, 16px);
+    }
+
+    &--insta {
+      top: 2px;
+      left: 73px;
+
+      .size(23px, 23px);
+    }
+
+    &--fb {
       top: -1px;
       right: -4px;
 

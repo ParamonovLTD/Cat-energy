@@ -1,15 +1,15 @@
 .form {
-  padding-top: 15px;
+  padding-top: 16px;
   padding-bottom: 32px;
 
   .font(16px, 18px);
   text-transform: uppercase;
   color: #222222;
 
-  overflow: hidden;
+  // overflow: hidden;
 
   @media @tablet-width {
-    padding-top: 42px;
+    padding-top: 0;
     padding-bottom: 72px;
 
     .font(20px, 20px);
@@ -17,20 +17,25 @@
 
   @media @desktop-width {
     padding-top: 60px;
-    padding-bottom: 83px;
+    padding-bottom: 81px;
+
+    overflow: visible;
   }
 }
 
 .form__container {
   .container;
+  padding-top: 15px;
 
   @media @tablet-width {
+    padding-top: 42px;
     padding-right: 67px;
     padding-left: 69px;
   }
 
   @media @desktop-width {
     .container;
+    padding-top: 61px;
   }
 }
 
@@ -53,7 +58,7 @@
 .form__text {
   max-width: 226px;
   .clear-block;
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
 
   .font(14px, 18px);
   text-transform: uppercase;
@@ -67,7 +72,7 @@
   }
 
   @media @desktop-width {
-    margin-bottom: 66px;
+    margin-bottom: 5px;
   }
 }
 
@@ -100,7 +105,7 @@
   }
 
   @media @tablet-width {
-    padding-top: 50px;
+    padding-top: 66px;
     padding-bottom: 72px;
     padding-left: 2px;
 
@@ -138,6 +143,8 @@
   padding-top: 12px;
   padding-bottom: 13px;
 
+  text-transform: uppercase;
+
   border: 1px solid #ebebeb;
 
   &:hover {
@@ -145,6 +152,10 @@
   }
 
   &:focus {
+    padding: 14px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+
     border: 2px solid #444444;
 
     outline: none;
@@ -164,6 +175,12 @@
     padding: 19px;
     padding-top: 13px;
     padding-bottom: 14px;
+
+    &:focus {
+      padding: 18px;
+      padding-top: 12px;
+      padding-bottom: 13px;
+    }
   }
 }
 
@@ -241,6 +258,8 @@
 .form__radio-label {
   position: relative;
   padding-left: 46px;
+
+  text-transform: uppercase;
 
   &:hover::before {
     border-color: #bababa;
@@ -330,7 +349,7 @@
 
   .font(14px, 16px, "Arial");
   text-align: center;
-  text-transform: initial;
+  text-transform: none;
   color: @greyish-brown;
 
   @media @tablet-width {

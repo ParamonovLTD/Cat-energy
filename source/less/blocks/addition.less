@@ -132,24 +132,35 @@
   }
 }
 
-.addition__parameter {
-  padding: 0;
+.addition__cell {
+  &--parameter {
+    padding: 0;
 
-  @media @tablet-width {
-    padding-top: 4px;
+    text-align: left;
+
+    @media @tablet-width {
+      padding-top: 4px;
+    }
+
+    @media @desktop-width {
+      display: block;
+      width: 50%;
+    }
   }
-}
 
-.addition__value {
-  padding: 0;
+  &--value {
+    padding: 0;
 
-  @media @tablet-width {
-    margin-left: 51px;
-    padding-top: 4px;
-  }
+    @media @tablet-width {
+      margin-left: 51px;
+      padding-top: 4px;
+    }
 
-  @media @desktop-width {
-    margin-left: 0;
+    @media @desktop-width {
+      margin-left: 0;
+
+      text-align: right;
+    }
   }
 }
 
