@@ -1,0 +1,47 @@
+.subtitle {
+  .clear-block;
+
+  font-weight: 400;
+  .font(24px, 24px, @font-oswald);
+  text-transform: none;
+  color: #111111;
+
+  @media @tablet-width {
+    .font(36px, 36px, @font-oswald);
+  }
+}
+
+.subtitle--green-line {
+  position: relative;
+  padding-bottom: 34px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: -39px;
+    z-index: -1;
+
+    .size(200px, 50px);
+
+    background-color: #ffffff;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    right: 0;
+    left: 50%;
+    z-index: -2;
+
+    .size(100vw, 3px);
+    margin-left: 0;
+
+    background-color: @leaf;
+
+    transform: translateX(-50%);
+  }
+}

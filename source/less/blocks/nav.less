@@ -66,7 +66,7 @@
   position: relative;
 
   font-weight: 500;
-  .font(20px, 20px);
+  .font(20px, 20px, @font-oswald);
   text-transform: uppercase;
   color: #111111;
 
@@ -92,7 +92,7 @@
 
   @media @tablet-width {
     font-weight: 400;
-    .font(18px, 25px);
+    .font(18px, 25px, @font-oswald);
     color: #222222;
 
     &--active::after {
@@ -109,7 +109,7 @@
   }
 
   @media @desktop-width {
-    .font(20px, 25px);
+    .font(20px, 25px, @font-oswald);
 
     &::after {
       bottom: -7px;

@@ -1,8 +1,8 @@
-.form {
+.form-box {
   padding-top: 16px;
   padding-bottom: 32px;
 
-  .font(16px, 18px);
+  .font(16px, 18px, @font-oswald);
   text-transform: uppercase;
   color: #222222;
 
@@ -11,7 +11,7 @@
     padding-top: 0;
     padding-bottom: 72px;
 
-    .font(20px, 20px);
+    .font(20px, 20px, @font-oswald);
   }
 
   @media @desktop-width {
@@ -22,7 +22,7 @@
   }
 }
 
-.form__container {
+.form-box__container {
   .container;
   padding-top: 15px;
 
@@ -38,7 +38,7 @@
   }
 }
 
-.form__title {
+.form-box__title {
   margin-bottom: 25px;
 
   text-transform: initial;
@@ -54,11 +54,11 @@
   }
 }
 
-.form__text {
+.form-box__text {
   max-width: 226px;
   .clear-block;
 
-  .font(14px, 18px);
+  .font(14px, 18px, @font-oswald);
   text-transform: uppercase;
   color: #111111;
 
@@ -66,7 +66,7 @@
     max-width: 330px;
     padding-left: 2px;
 
-    .font(20px, 30px);
+    .font(20px, 30px, @font-oswald);
   }
 
   @media @desktop-width {
@@ -133,9 +133,14 @@
   }
 }
 
+.form__input-label {
+  white-space: nowrap;
+}
+
 .form__input {
-  flex-grow: 1;
   .clear-block;
+  flex-grow: 1;
+  min-width: 150px;
   margin-left: 13px;
   padding: 16px;
   padding-top: 12px;
@@ -162,9 +167,16 @@
   &::placeholder {
     text-transform: uppercase;
     color: @greyish-brown;
+
+    opacity: 1;
   }
 
-  &--error {
+  &:-ms-input-placeholder {
+    text-transform: uppercase;
+    color: @greyish-brown;
+  }
+
+  &:invalid {
     border: 2px solid #ff8282;
   }
 
@@ -238,7 +250,10 @@
 }
 
 .form__radio {
-  display: none;
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
 
   &:checked ~ .form__radio-label::after {
     display: block;
@@ -250,6 +265,10 @@
 
   &:checked:active ~ .form__radio-label {
     opacity: 1;
+  }
+
+  &:focus ~ .form__radio-label::before {
+    border: 2px solid #9eb9e1;
   }
 }
 
@@ -333,7 +352,7 @@
     padding-bottom: 17px;
     padding-left: 0;
 
-    .font(20px, 20px);
+    .font(20px, 20px, @font-oswald);
   }
 
   @media @desktop-width {
@@ -345,7 +364,7 @@
 .form__necessary {
   .clear-block;
 
-  .font(14px, 16px, "Arial");
+  .font(14px, 16px, @font-arial);
   text-align: center;
   text-transform: none;
   color: @greyish-brown;
@@ -354,7 +373,7 @@
     margin-left: 61px;
     padding-bottom: 4px;
 
-    .font(16px, 16px, "Arial");
+    .font(16px, 16px, @font-arial);
   }
 
   @media @desktop-width {
