@@ -40,20 +40,20 @@
   </header>
 
   <main>
-    <section>
-      <div class="form__container">
-        <h1 class="form__title section-title">Подбор программы</h1>
-        <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    <section class="form-box">
+      <div class="form-box__container">
+        <h1 class="form-box__title section-title">Подбор программы</h1>
+        <p class="form-box__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <form class="form" method="post" action="https://echo.htmlacademy.ru">
           <div class="form__main-info">
             <ul class="form__inputs">
               <li class="form__input-box">
                 <label class="form__input-label" for="form-name">Имя:*</label>
-                <input class="form__input" id="form-name" type="text" name="name" placeholder="Барсик">
+                <input class="form__input" id="form-name" type="text" name="name" placeholder="Барсик" required>
               </li>
               <li class="form__input-box">
                 <label class="form__input-label" for="form-weight">Вес (кг):*</label>
-                <input class="form__input" id="form-weight" type="text" name="weight" placeholder="7">
+                <input class="form__input" id="form-weight" type="text" name="weight" placeholder="7" required>
               </li>
               <li class="form__input-box">
                 <label class="form__input-label" for="form-age">Возраст (лет):</label>
@@ -88,7 +88,7 @@
               </li>
               <li class="contacts__inputs-box">
                 <label class="contacts__label" for="form-tel">Телефон:*</label>
-                <input class="contacts__input contacts__input--phone" id="form-tel" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required>
+                <input class="contacts__input contacts__input--phone" id="form-tel" type="tel" name="phone-number" placeholder="8 (960) 900-60-90" required pattern="8 [(]{1}[0-9]{3}[)]{1} [0-9]{3}-[0-9]{2}-[0-9]{2}">
                 <svg class="contacts__icon contacts__icon--phone" width="21" height="21">
                   <use xlink:href="#icon-phone"></use>
                 </svg>
@@ -130,7 +130,7 @@
 
     <section class="location location--grey">
       <div class="location__container">
-        <div class="location-wrapper">
+        <div class="location__wrapper">
           <div class="location__text">
             <h2 class="location__title section-title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
             <address class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="location__city">Санкт-Петербург</span></address>

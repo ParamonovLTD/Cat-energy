@@ -101,6 +101,13 @@
   &::placeholder {
     text-transform: uppercase;
     color: @greyish-brown;
+
+    opacity: 1;
+  }
+
+  &:-ms-input-placeholder {
+    text-transform: uppercase;
+    color: @greyish-brown;
   }
 
   &:hover {
@@ -121,11 +128,11 @@
     fill: @leaf;
   }
 
-  &--error {
+  &:invalid {
     border: 2px solid #ff8282;
   }
 
-  &--error + .contacts__icon {
+  &:invalid + .contacts__icon {
     fill: #ff8282;
   }
 

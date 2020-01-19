@@ -41,7 +41,7 @@
   .size(124px, 56px);
   .clear-block;
 
-  .font(24px, 24px);
+  .font(24px, 24px, @font-oswald);
   text-transform: uppercase;
   text-align: center;
   color: #111111;
@@ -68,7 +68,7 @@
     position: absolute;
     z-index: 2;
 
-    .font(12px, 12px, "Arial");
+    .font(12px, 12px, @font-arial);
     text-transform: lowercase;
     color: @greyish-brown;
   }
@@ -102,7 +102,7 @@
   @media @tablet-width {
     .size(162px, 72px);
 
-    .font(30px, 37px);
+    .font(30px, 37px, @font-oswald);
 
     background-color: #ffffff;
     border: 1px solid #cdcdcd;
@@ -113,7 +113,7 @@
     }
 
     &::after {
-      .font(14px, 14px, "Arial");
+      .font(14px, 14px, @font-arial);
     }
 
     &--weight {
@@ -127,10 +127,10 @@
       }
 
       &::after {
-        bottom: 0;
-        left: 31px;
+        bottom: -7px;
+        left: 27px;
 
-        .size(97px, 8px);
+        .size(105px, 15px);
       }
     }
 
@@ -145,10 +145,10 @@
       }
 
       &::after {
-        bottom: -3px;
+        bottom: -7px;
         left: 15px;
 
-        .size(130px, 11px);
+        .size(130px, 15px);
       }
     }
   }
@@ -166,7 +166,7 @@
   .clear-block;
   margin-top: 14px;
 
-  .font(14px, 20px);
+  .font(14px, 20px, @font-oswald);
   text-transform: uppercase;
   color: #111111;
 
@@ -174,7 +174,7 @@
     max-width: 180px;
     margin-top: 8px;
 
-    .font(20px, 29px);
+    .font(20px, 29px, @font-oswald);
     text-align: right;
   }
 
