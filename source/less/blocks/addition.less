@@ -132,29 +132,42 @@
     padding: 0;
 
     text-align: left;
-
-    @media @tablet-width {
-      padding-top: 4px;
-    }
-
-    @media @desktop-width {
-      display: block;
-      width: 50%;
-    }
   }
 
   &--value {
     padding: 0;
+  }
 
-    @media @tablet-width {
+  @media @tablet-width {
+    &--parameter {
+      padding-top: 4px;
+    }
+
+    &--value {
       margin-left: 51px;
       padding-top: 4px;
     }
 
-    @media @desktop-width {
+    &--fixed {
+      padding-left: 9px;
+    }
+  }
+
+  @media @desktop-width {
+    &--parameter {
+      display: block;
+      width: 50%;
+    }
+
+    &--value {
       margin-left: 0;
 
       text-align: right;
+    }
+
+    &--fixed {
+      margin-right: 9px;
+      padding-left: 0;
     }
   }
 }
